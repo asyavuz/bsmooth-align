@@ -241,7 +241,7 @@ for my $a (@ARGV) {
 # Inject default Bowtie arguments if none were specified
 if(scalar(@aligner_args) == 0) {
 	push @aligner_args, "-M 1";
-	push @aligner_args, "--best";
+	# push @aligner_args, "--best";
 }
 
 mkpath($keep_dir) if defined($keep_dir);
